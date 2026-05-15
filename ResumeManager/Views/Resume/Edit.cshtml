@@ -1,0 +1,113 @@
+﻿@model ResumeManager.Models.Applicant
+
+@{
+    ViewData["Title"] = "Edit Applicant";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 rounded-4">
+
+        
+        <h2 class="text-center text-primary mb-4">✏️ Edit Applicant Profile</h2>
+
+        <form asp-action="Edit" enctype="multipart/form-data">
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-bold"></label>
+                        <input asp-for="Name" class="form-control form-control-lg" placeholder="Enter name" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Gender" class="form-label fw-bold"></label>
+                        <select asp-for="Gender" class="form-control form-control-lg">
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Age" class="form-label fw-bold"></label>
+                        <input asp-for="Age" class="form-control form-control-lg" />
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Qulification" class="form-label fw-bold"></label>
+                        <input asp-for="Qulification" class="form-control form-control-lg" placeholder="e.g. B.Tech, MCA" />
+                        <span asp-validation-for="Qulification" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="TotalExperience" class="form-label fw-bold"></label>
+                        <input asp-for="TotalExperience" class="form-control form-control-lg" placeholder="Years of experience" />
+                        <span asp-validation-for="TotalExperience" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+         
+                <div class="col-md-6 text-center">
+
+                    <label class="fw-bold mb-2">Current Photo</label><br />
+
+                    <img src="@Model.PhotoUrl"
+                         id="currentImg"
+                         class="rounded-circle border shadow mb-3"
+                         width="150" height="150" />
+
+                    <div class="mb-3">
+                        <label class="fw-bold">Upload New Photo</label>
+                        <input type="file" name="PhotoFile" class="form-control" onchange="previewImage(event)" />
+                    </div>
+
+                    <img id="ImagePrv"
+                         src=""
+                         class="rounded shadow"
+                         width="150" height="150"
+                         style="display:none;" />
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success px-4">💾 Save</button>
+                <a asp-action="Index" class="btn btn-secondary px-4 ms-2">⬅ Back</a>
+            </div>
+
+        </form>
+    </div>
+    
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('ImagePrv');
+                output.src = reader.result;
+                output.style.display = "block";
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+    
+
+}

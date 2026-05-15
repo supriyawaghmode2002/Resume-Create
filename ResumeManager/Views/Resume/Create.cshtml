@@ -1,0 +1,208 @@
+﻿@model ResumeManager.Models.Applicant
+
+@{
+ViewData["Title"] = "Create Applicant";
+}
+
+<div class="container mt-5">
+
+
+<div class="card shadow-lg rounded-4 p-4">
+
+  
+    <div class="text-center mb-4">
+        <h2 class="text-primary fw-bold">👩‍💼 Create Applicant Profile</h2>
+        <p class="text-muted">Fill the details to add a new applicant</p>
+    </div>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+
+          
+            <div class="col-md-6">
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label fw-semibold"></label>
+                    <input asp-for="Name" class="form-control form-control-lg" placeholder="Enter full name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Gender" class="form-label fw-semibold"></label>
+                    <select asp-for="Gender" class="form-control form-control-lg">
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Age" class="form-label fw-semibold"></label>
+                    <input asp-for="Age" class="form-control form-control-lg" placeholder="Enter age" />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Qulification" class="form-label fw-semibold"></label>
+                    <input asp-for="Qulification" class="form-control form-control-lg" placeholder="e.g. B.Tech, MCA" />
+                    <span asp-validation-for="Qulification" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="TotalExperience" class="form-label fw-semibold"></label>
+                    <input asp-for="TotalExperience" class="form-control form-control-lg" placeholder="Total experience (years)" />
+                    <span asp-validation-for="TotalExperience" class="text-danger"></span>
+                </div>
+
+            </div>
+
+          
+            <div class="col-md-6 text-center">
+
+                <label class="fw-semibold mb-2">Upload Photo</label>
+
+                <div class="mb-3">
+                    <input type="file" name="PhotoFile" class="form-control"
+                           onchange="previewImage(event)" />
+                </div>
+
+                <img id="ImagePrv"
+                     src="https://via.placeholder.com/150"
+                     class="rounded-circle border shadow"
+                     width="150" height="150" />
+
+            </div>
+
+        </div>
+
+     
+        <div class="mt-5">
+            <h4 class="text-secondary fw-bold mb-3">💼 Work Experience</h4>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle text-center" id="ExTable">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Company</th>
+                            <th>Designation</th>
+                            <th>Years</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @for (int i = 0; i < (Model.Experiences?.Count ?? 1); i++)
+                        {
+                            <tr>
+                                <td>
+                                    <input name="Experience[@i].CompanyName"
+                                           class="form-control"
+                                           placeholder="Company Name" />
+                                </td>
+
+                                <td>
+                                    <input name="Experience[@i].Designation"
+                                           class="form-control"
+                                           placeholder="Role" />
+                                </td>
+
+                                <td>
+                                    <input name="Experience[@i].YearsWorked"
+                                           class="form-control"
+                                           placeholder="Years" />
+                                </td>
+
+                                <td>
+                                    <button type="button"
+                                            class="btn btn-success btn-sm"
+                                            onclick="AddItem(this)">➕</button>
+
+                                    <button type="button"
+                                            class="btn btn-danger btn-sm d-none"
+                                            onclick="RemoveItem(this)">🗑</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+     
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary px-5 shadow">💾 Save</button>
+            <a asp-action="Index" class="btn btn-outline-secondary px-4 ms-2">Cancel</a>
+        </div>
+
+    </form>
+
+</div>
+
+
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    }
+
+    .card {
+        border: none;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn {
+        border-radius: 10px;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f5faff;
+        transition: 0.3s;
+    }
+</style>
+
+@section Scripts {
+@await Html.PartialAsync("_ValidationScriptsPartial")}
+
+
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            document.getElementById('ImagePrv').src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+
+    function UpdateIndexes() {
+        document.querySelectorAll("#ExTable tbody tr").forEach((row, i) => {
+            row.querySelectorAll("input").forEach(input => {
+                let name = input.getAttribute("name");
+                if (name) {
+                    let parts = name.split('.');
+                    parts[0] = `Experience[${i}]`;
+                    input.setAttribute("name", parts.join('.'));
+                }
+            });
+        });
+    }
+
+    function AddItem(btn) {
+        let row = btn.closest("tr");
+        let clone = row.cloneNode(true);
+
+        $(clone).find("input").val("");
+        $(clone).find(".btn-danger").removeClass("d-none");
+
+        document.querySelector("#ExTable tbody").appendChild(clone);
+        Up
+        </script>
+

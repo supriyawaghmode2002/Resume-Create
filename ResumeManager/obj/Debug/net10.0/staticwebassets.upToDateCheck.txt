@@ -1,0 +1,138 @@
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\043a0b15-0427-4982-87c7-709e7472f3ed_IMG_20211201_173334.jpg
+wwwroot\uploads\061ae9b8-7bf1-422e-8d53-31e052dca1b8_Supriya_Waghmode_Resume (2).pdf
+wwwroot\uploads\1191a72b-35c8-4ee8-a293-61e88baa6bc8_IMG_20211201_173334.jpg
+wwwroot\uploads\22c568c0-c3d8-4ee9-ab34-7f0a4f6148e5_IMG_20230918_175457_987.jpg
+wwwroot\uploads\26e8ce74-e461-4139-aea7-2bcaacc5ba63_WhatsApp Image 2025-11-17 at 2.47.59 PM.jpeg
+wwwroot\uploads\56425a4a-70c7-42ec-a9d8-5999aabb069e_us-visa-size-photo-5-minute-gangai-karai-puram-chennai-photo-studios-ounitrx1hz.webp
+wwwroot\uploads\addded0e-1dc5-4ec0-a6ae-b939a6ef05a1_IMG_20231112_192633.jpg
+wwwroot\uploads\bb354c94-aca5-46a0-9d0b-6b1e43c362b2_images.jfif
+wwwroot\uploads\c3e58214-ee28-4750-87b0-17d285627060_woman-1-after.jpg
+wwwroot\uploads\cc206b92-b0e7-4a99-b738-62d9f23bdf22_images.jfif
+wwwroot\uploads\cf02a566-f3b9-4012-8366-d17e44edfeeb_IMG_20231112_192633.jpg
+wwwroot\uploads\df6eeb36-95f9-4505-b6cd-5f4f6e93c11a_woman-1-after.jpg
+wwwroot\uploads\e68e0097-efd4-451f-a62c-f655b307af30_images.jfif
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\css\site.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\favicon.ico
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\js\site.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery-validation\LICENSE.md
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\dist\jquery.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\dist\jquery.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\dist\jquery.min.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\API\Resume create\ResumeManager\ResumeManager\wwwroot\lib\jquery\LICENSE.txt

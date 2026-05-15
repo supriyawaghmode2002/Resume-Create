@@ -1,0 +1,129 @@
+﻿@model ResumeManager.Models.Applicant
+
+@{
+    ViewData["Title"] = "Applicant Details";
+}
+
+<div class="container mt-5">
+
+    
+    <div class="card shadow-lg rounded-4 p-4">
+
+       
+        <div class="text-center mb-4">
+            <h2 class="text-primary fw-bold">👤 Applicant Profile</h2>
+            <p class="text-muted">Detailed information of applicant</p>
+        </div>
+
+        <div class="row">
+
+         
+            <div class="col-md-4 text-center">
+                <img src="@Model.PhotoUrl"
+                     class="rounded-circle shadow border mb-3"
+                     width="180" height="180" />
+
+                <h4 class="fw-bold">@Model.Name</h4>
+                <p class="text-muted">@Model.Qulification</p>
+            </div>
+
+           
+            <div class="col-md-8">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="fw-semibold text-muted">Gender</label>
+                        <div class="form-control bg-light">@Model.Gender</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="fw-semibold text-muted">Age</label>
+                        <div class="form-control bg-light">@Model.Age</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-semibold text-muted">Qualification</label>
+                    <div class="form-control bg-light">@Model.Qulification</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-semibold text-muted">Total Experience</label>
+                    <div class="form-control bg-light">
+                        @Model.TotalExperience Years
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+       
+        @if (Model.Experiences != null && Model.Experiences.Count > 0)
+        {
+            <div class="mt-5">
+                <h4 class="text-secondary fw-bold mb-3">💼 Work Experience</h4>
+
+                <div class="table-responsive">
+                    <table class="table table-hover text-center align-middle">
+
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Company</th>
+                                <th>Designation</th>
+                                <th>Years Worked</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var exp in Model.Experiences)
+                            {
+                                <tr>
+                                    <td>@exp.CompanyName</td>
+                                    <td>@exp.Designation</td>
+                                    <td>@exp.YearsWorkes</td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        }
+
+      
+        <div class="text-center mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.Id"
+               class="btn btn-warning px-4">✏️ Edit</a>
+
+            <a asp-action="Index"
+               class="btn btn-outline-secondary px-4 ms-2">⬅ Back</a>
+        </div>
+
+    </div>
+    
+
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    }
+
+    .card {
+        border: none;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn {
+        border-radius: 10px;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f5faff;
+        transition: 0.3s;
+    }
+</style>

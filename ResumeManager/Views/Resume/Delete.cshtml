@@ -1,0 +1,102 @@
+﻿@model ResumeManager.Models.Applicant
+
+@{
+    ViewData["Title"] = "Delete Applicant";
+}
+
+<div class="container mt-5">
+
+   
+    <div class="card shadow-lg rounded-4 p-4 border-0">
+
+        <!-- Warning Header -->
+        <div class="text-center mb-4">
+            <h2 class="text-danger fw-bold">⚠️ Delete Applicant</h2>
+            <p class="text-muted">Are you sure you want to delete this applicant?</p>
+        </div>
+
+        <div class="row align-items-center">
+
+            <!-- LEFT: IMAGE -->
+            <div class="col-md-4 text-center">
+                <img src="@Model.PhotoUrl"
+                     class="rounded-circle shadow border mb-3"
+                     width="160" height="160" />
+
+                <h5 class="fw-bold">@Model.Name</h5>
+                <p class="text-muted">@Model.Qulification</p>
+            </div>
+
+            <!-- RIGHT: DETAILS -->
+            <div class="col-md-8">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="fw-semibold text-muted">Gender</label>
+                        <div class="form-control bg-light">@Model.Gender</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="fw-semibold text-muted">Age</label>
+                        <div class="form-control bg-light">@Model.Age</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-semibold text-muted">Qualification</label>
+                    <div class="form-control bg-light">@Model.Qulification</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-semibold text-muted">Total Experience</label>
+                    <div class="form-control bg-light">
+                        @Model.TotalExperience Years
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- WARNING MESSAGE -->
+        <div class="alert alert-danger mt-4 text-center">
+            ⚠️ This action cannot be undone!
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="text-center mt-3">
+            <form asp-action="Delete" class="d-inline">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger px-4 shadow">
+                    🗑 Yes, Delete
+                </button>
+            </form>
+
+            <a asp-action="Index"
+               class="btn btn-outline-secondary px-4 ms-2">
+                Cancel
+            </a>
+        </div>
+
+    </div>
+    
+
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to right, #eef2f3, #f8d7da);
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .btn {
+        border-radius: 10px;
+    }
+</style>

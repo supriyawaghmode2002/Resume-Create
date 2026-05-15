@@ -1,0 +1,106 @@
+﻿@model IPagedList<ResumeManager.Models.Applicant>
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+
+@{
+    ViewData["Title"] = "Applicant List";
+}
+
+<div class="container mt-5">
+
+    
+    
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary fw-bold">👩‍💼 Applicant Management</h2>
+        <a asp-action="Create" class="btn btn-success shadow-sm px-4">
+            ➕ Add Applicant
+        </a>
+    </div>
+
+   
+    <div class="card shadow-lg rounded-4 p-3">
+
+        <div class="table-responsive">
+            <table class="table align-middle table-hover">
+
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>Qualification</th>
+                        <th>Experience</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody class="text-center">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="@item.PhotoUrl"
+                                     class="rounded-circle border shadow"
+                                     width="50" height="50" />
+                            </td>
+
+                            <td class="fw-semibold">@item.Name</td>
+                            <td>@item.Gender</td>
+                            <td>@item.Age</td>
+                            <td>@item.Qulification</td>
+                            <td>@item.TotalExperience yrs</td>
+
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-warning me-1">✏️</a>
+
+                                <a asp-action="Details" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-info text-white me-1">👁</a>
+
+                                <a asp-action="Delete" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-danger">🗑</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+            new PagedListRenderOptions
+            {
+                LiElementClasses = new[] { "page-item" },
+                PageClasses = new[] { "page-link" }
+            })
+        </div>
+
+    </div>
+    
+
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    }
+
+    .card {
+        border: none;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f5faff;
+        transition: 0.3s;
+    }
+
+    .btn {
+        border-radius: 8px;
+    }
+
+    .page-item.active .page-link {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+</style>
